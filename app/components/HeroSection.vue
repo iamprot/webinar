@@ -80,7 +80,7 @@ const event = [
                 </div>
                 
                 <div v-reveal="{ delay: 1 }" class="flex gap-3 flex-wrap mb-8">
-                    <div v-for="(item,idx) in event" class="flex items-center gap-2.5 text-sm text-primary px-4 py-2 bg-primary/5 border border-primary/20 rounded-full">
+                    <div v-for="(item,idx) in event" class="flex items-center gap-2.5 text-sm text-primary px-4 py-2 bg-primary/5 hover:bg-white/50 border border-primary/20 rounded-full transition-colors duration-300 ease-in-out">
                         <Icon :name="`lucide:${item.icon}`" /><span>{{ item.description }}</span>
                     </div>
 
