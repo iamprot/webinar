@@ -138,8 +138,7 @@ const event = [
                             class="flex items-start gap-3 py-3 border-t border-line-soft text-[15px] text-ink"
                         >
                         <Icon name="lucide:check" class="text-primary mt-1.5" />
-                            <span
-                                >заполнение бюджетных форм производственными
+                            <span>Заполнение бюджетных форм производственными
                                 подразделениями</span
                             >
                         </li>
@@ -147,8 +146,7 @@ const event = [
                             class="flex items-start gap-3 py-3 border-t border-line-soft text-[15px] text-ink"
                         >
                             <Icon name="lucide:check" class="text-primary mt-1.5" />
-                            <span
-                                >расчет полной себестоимости в единой модели
+                            <span>Расчет полной себестоимости в единой модели
                                 данных</span
                             >
                         </li>
@@ -156,8 +154,7 @@ const event = [
                             class="flex items-start gap-3 py-3 border-t border-line-soft text-[15px] text-ink"
                         >
                             <Icon name="lucide:check" class="text-primary mt-1.5" />
-                            <span
-                                >сбор заявок подразделений в сводный
+                            <span>Сбор заявок подразделений в сводный
                                 бюджет</span
                             >
                         </li>
@@ -165,8 +162,7 @@ const event = [
                             class="flex items-start gap-3 py-3 border-t border-line-soft text-[15px] text-ink"
                         >
                             <Icon name="lucide:check" class="text-primary mt-1.5" />
-                            <span
-                                >сценарное моделирование и «что-если»
+                            <span>Сценарное моделирование и «что-если»
                                 анализ</span
                             >
                         </li>
