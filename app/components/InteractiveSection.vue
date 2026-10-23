@@ -40,18 +40,44 @@ onUnmounted(() => {
 
 <template>
     <section
-        class="relative py-16 md:py-24 min-h-screen flex items-center bg-[#222246] text-white overflow-hidden"
+        class="relative py-16 md:py-24 min-h-screen flex items-center bg-[#1D1D3B] text-white overflow-hidden"
         id="interactive"
     >
-        <!-- Modern Grid Background -->
-    <div class="absolute inset-0 pointer-events-none overflow-hidden">
-      <div class="absolute inset-0 bg-[linear-gradient(to_right,#aeaeae_1px,transparent_1px),linear-gradient(to_bottom,#aeaeae_1px,transparent_1px)] bg-size-[64px_64px] mask-[radial-gradient(ellipse_at_center,black_30%,transparent_75%)] opacity-10"></div>
-    </div>
-    
+        <div class="absolute inset-0 pointer-events-none overflow-hidden opacity-10">
+            <div
+                class="h-full"
+                style="
+                    background-color: #1D1D3B;
+                    opacity: 1;
+                    background-image: radial-gradient(
+                        circle,
+                        #ffffff 0.96px,
+                        transparent 0.96px
+                    );
+                    background-size: 16px 16px;
+                    mask-image: radial-gradient(
+                        ellipse at center,
+                        rgba(0, 0, 0, 0.7) 0%,
+                        rgba(0, 0, 0, 0) 75%
+                    );
+                    -webkit-mask-image: radial-gradient(
+                        ellipse at center,
+                        rgba(0, 0, 0, 0.7) 0%,
+                        rgba(0, 0, 0, 0) 75%
+                    );
+                    mask-size: 100% 100%;
+                    -webkit-mask-size: 100% 100%;
+                    mask-repeat: no-repeat;
+                    -webkit-mask-repeat: no-repeat;
+                "
+            ></div>
+        </div>
+
         <div class="absolute inset-0 pointer-events-none overflow-hidden">
             <div
-                class="absolute rounded-full blur-[90px] w-175 h-175 bg-primary/35 -top-62.5 left-1/2 -translate-x-1/2 animate-float3"
-            ></div>
+                class="absolute rounded-full blur-[90px] w-175 h-175 bg-primary/25 -top-62.5 left-1/2 -translate-x-1/2 animate-float4"
+            >
+        </div>
             <div
                 class="absolute rounded-full blur-[90px] w-125 h-125 bg-accent/15 -bottom-50 -right-25 animate-float1"
             ></div>
@@ -80,29 +106,32 @@ onUnmounted(() => {
                 <article
                     v-reveal="{ delay: 1 }"
                     ref="card0"
-                    class="bg-white/5 border border-white/10 rounded-[28px] p-8 md:p-12 backdrop-blur-xl transition-all duration-400 hover:bg-white/10 hover:border-accent/30 flex flex-col justify-center md:row-span-2 bg-linear-to-br from-primary/20 to-accent/6"
+                    class="group border border-accent/10 rounded-[28px] p-8 md:p-12 backdrop-blur-xl transition-all duration-400 hover:border-accent/40 flex flex-col justify-center md:row-span-2 bg-linear-to-br from-[#21214B] to-[#252552]"
                     style="
-                        transform: perspective(1000px)
+                        transform: perspective(500px)
                             rotateX(var(--tilt, 0deg));
                         transform-style: preserve-3d;
+                        
                     "
                 >
                     <span
                         class="inline-block px-3.5 py-1.5 bg-accent/15 text-accent text-xs font-semibold tracking-widest uppercase rounded-full mb-5 self-start"
                         >Живой ввод данных</span
                     >
-                    <h3 class="text-white text-3xl mb-4 tracking-tight">
+                    <h3 class="text-accent group-hover:text-white text-3xl mb-4 tracking-tight transition-all duration-400">
                         Ввод данных и пересчет сценария
                     </h3>
                     <p class="text-white/75 text-lg max-w-115">
-                        Покажем, как в модели меняются данные, заявки, макропараметры и драйверы, а затем пересчитаем бюджет и сравним результаты.
+                        Покажем, как в модели меняются данные, заявки,
+                        макропараметры и драйверы, а затем пересчитаем бюджет и
+                        сравним результаты.
                     </p>
                 </article>
 
                 <article
                     v-reveal="{ delay: 2 }"
                     ref="card1"
-                    class="bg-white/5 border border-white/10 rounded-[28px] p-8 backdrop-blur-xl transition-all duration-400 hover:bg-white/10 hover:border-accent/30 flex flex-col justify-start"
+                    class="group bg-[#21214B] border border-accent/10 rounded-[28px] p-8 backdrop-blur-xl transition-all duration-400 hover:bg-[#252552] hover:border-accent/40 flex flex-col justify-start"
                     style="
                         transform: perspective(1000px)
                             rotateX(var(--tilt, 0deg));
@@ -113,15 +142,19 @@ onUnmounted(() => {
                         class="inline-block px-3 py-1.5 bg-accent/15 text-accent text-[11px] font-semibold tracking-widest uppercase rounded-full mb-4 self-start"
                         >Многопользовательский режим</span
                     >
-                    <h3 class="text-white text-xl mb-3">Несколько пользователей</h3>
-                    <p class="text-white/60 text-[15px]">Покажем, как организовать одновременную работу подразделений в одной бюджетной модели.
+                    <h3 class="text-accent text-xl mb-3 group-hover:text-white transition-all duration-400">
+                        Несколько пользователей
+                    </h3>
+                    <p class="text-white/60 text-[15px]">
+                        Покажем, как организовать одновременную работу
+                        подразделений в одной бюджетной модели.
                     </p>
                 </article>
 
                 <article
                     v-reveal="{ delay: 3 }"
                     ref="card2"
-                    class="bg-white/5 border border-white/10 rounded-[28px] p-8 backdrop-blur-xl transition-all duration-400 hover:bg-white/10 hover:border-accent/30 flex flex-col justify-start"
+                    class="group bg-[#21214B] border border-accent/10 rounded-[28px] p-8 backdrop-blur-xl transition-all duration-400 hover:bg-[#252552] hover:border-accent/40 flex flex-col justify-start"
                     style="
                         transform: perspective(1000px)
                             rotateX(var(--tilt, 0deg));
@@ -132,11 +165,12 @@ onUnmounted(() => {
                         class="inline-block px-3 py-1.5 bg-accent/15 text-accent text-[11px] font-semibold tracking-widest uppercase rounded-full mb-4 self-start"
                         >Реактивность</span
                     >
-                    <h3 class="text-white text-xl mb-3">
+                    <h3 class="text-accent text-xl mb-3 group-hover:text-white transition-all duration-400">
                         Изменения видны сразу
                     </h3>
                     <p class="text-white/60 text-[15px]">
-                        Посмотрим, как новые данные и корректировки отражаются в своде, расходах и прибыли.
+                        Посмотрим, как новые данные и корректировки отражаются в
+                        своде, расходах и прибыли.
                     </p>
                 </article>
             </div>

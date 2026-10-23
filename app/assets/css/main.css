@@ -18,6 +18,7 @@
     --animate-float1: float1 18s ease-in-out infinite;
     --animate-float2: float2 22s ease-in-out infinite;
     --animate-float3: float3 25s ease-in-out infinite;
+    --animate-float4: float4 20s ease-in-out infinite;
     --animate-pulse-custom: pulse-custom 2s ease-in-out infinite;
 
     @keyframes float1 {
@@ -45,6 +46,15 @@
         }
         50% {
             transform: translate(-140px, -130px) scale(0.92);
+        }
+    }
+    @keyframes float4 {
+        0%,
+        100% {
+            transform: translate(0, 0) scale(1);
+        }
+        50% {
+            transform: translate(-140px, -130px) scale(1.4);
         }
     }
     @keyframes pulse-custom {
@@ -109,6 +119,8 @@
         z-index: 100;
         mix-blend-mode: multiply;
     }
+
+
 }
 
 @layer components {

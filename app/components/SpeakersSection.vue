@@ -32,7 +32,7 @@ const speakers = [
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-230 mx-auto">
         <article v-for="(speaker, i) in speakers" :key="i" v-reveal="{ delay: i + 1 }" class="bg-white rounded-4xl overflow-hidden border border-line-soft transition-all duration-400 hover:-translate-y-1.5 hover:shadow-2xl hover:border-line-strong group">
           <div class="aspect-4/3 overflow-hidden relative bg-linear-to-br from-primary/10 to-accent/15">
-            <div :style="`background-image: url(${speaker.image});`" class="w-full h-full bg-cover transition-transform duration-600 ease-in-out group-hover:scale-105"></div>
+            <div :style="`background-image: url(${speaker.image});`" class="w-full h-full bg-cover"></div>
             <div class="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-ink/60 pointer-events-none"></div>
           </div>
           <div class="p-7">
