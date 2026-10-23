@@ -27,7 +27,9 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
     <div class="container mx-auto max-w-7xl px-2 md:px-8 flex items-center justify-between gap-8 transition-all duration-300 ease-soft">
       <!-- Logo & Nav links stay exactly the same -->
       <div class="flex items-center justify-around gap-3 md:gap-6">
-        <BrandMark class="h-6 md:h-9 w-fit shrink-0" />
+        <a href="#">
+          <BrandMark class="h-6 md:h-9 w-fit shrink-0" />
+        </a>
         <KplanLogo class="h-5 md:h-9 w-fit shrink-0" />
         <AxenixLogo class="h-7 md:h-9 mb-3 w-fit shrink-0" />
       </div>
