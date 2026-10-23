@@ -1,11 +1,11 @@
 <script setup>
 const roles = [
-  { icon: 'briefcase-business-duotone', title: 'Финансовые директора', desc: 'Тут бы описание' },
-  { icon: 'file-chart-line-duotone', title: 'Руководители ПЭО', desc: 'Тут бы описание' },
-  { icon: 'clipboard-check-duotone', title: 'Специалисты по бюджетированию', desc: 'Тут бы описание' },
-  { icon: 'chart-candlestick-duotone', title: 'Финансовые аналитики', desc: 'Тут бы описание' },
-  { icon: 'calculator-duotone', title: 'Контролеры', desc: 'Тут бы описание' },
-  { icon: 'cog-duotone', title: 'Команды автоматизации', desc: 'Тут бы описание' }
+  { icon: 'briefcase-business-duotone', title: 'Финансовые директора', desc: 'Управляют финансовой стратегией и контролируют эффективность бизнеса.' },
+  { icon: 'file-chart-line-duotone', title: 'Руководители ПЭО', desc: 'Отвечают за организацию бюджетирования и планирование деятельности компании.' },
+  { icon: 'clipboard-check-duotone', title: 'Специалисты по бюджетированию', desc: 'Формируют бюджеты, собирают данные и контролируют их исполнение.' },
+  { icon: 'chart-candlestick-duotone', title: 'Финансовые аналитики', desc: 'Анализируют финансовые показатели, себестоимость и сценарии развития.' },
+  { icon: 'calculator-duotone', title: 'Контролеры', desc: 'Отслеживают отклонения от плановых показателей и причины их возникновения.' },
+  { icon: 'user-round-cog-duotone', title: 'Команды автоматизации', desc: 'Внедряют инструменты для оптимизации финансовых процессов и сбора данных.' }
 ];
 </script>
 
@@ -24,7 +24,7 @@ const roles = [
             <Icon :name="`lucide-extended:${role.icon}`" class="shrink-0 h-6! w-6!"/>
           </div>
           <div>
-            <h4 class="text-[clamp(16px,1.5vw,20px)] mb-0.5 tracking-tight leading-6">{{ role.title }}</h4>
+            <h4 class="text-[clamp(16px,1.5vw,20px)] mb-2 tracking-tight leading-7">{{ role.title }}</h4>
             <p class="text-[15px] text-muted">{{ role.desc }}</p>
           </div>
         </article>
