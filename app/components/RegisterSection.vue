@@ -204,7 +204,7 @@ const event = [
 
         <div class="container mx-auto max-w-7xl px-4 md:px-8 relative z-10">
             <div
-                class="grid grid-cols-1 md:grid-cols-[1fr_1.1fr] gap-20 items-center"
+                class="grid grid-cols-1 md:grid-cols-[1fr_1.1fr] gap-10 md:gap-20 items-center"
             >
                 <div v-reveal>
                     <span class="section-tag bg-accent/15! text-accent!"
@@ -243,7 +243,7 @@ const event = [
                 <form
                     v-reveal="{ delay: 1 }"
                     @submit.prevent="handleSubmit"
-                    class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-4xl p-10"
+                    class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-4xl p-4 md:p-10"
                 >
                     <input
                         type="text"
