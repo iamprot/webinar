@@ -52,19 +52,35 @@ const event = [
         @mousemove="handleMouseMove"
         @mouseleave="handleMouseLeave"
     >
-    <div class="absolute inset-0 opacity-100">
-
-        <div class="h-full" style="background-color: #E5E5F7;
-opacity: 0.2;
-background-image: radial-gradient(circle, #121212 0.96px, transparent 0.96px);
-background-size: 16px 16px;
-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 75%);
--webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 75%);
-mask-size: 100% 100%;
--webkit-mask-size: 100% 100%;
-mask-repeat: no-repeat;
--webkit-mask-repeat: no-repeat;"></div>
-    </div>    
+        <div class="absolute inset-0 opacity-100">
+            <div
+                class="h-full"
+                style="
+                    background-color: #e5e5f7;
+                    opacity: 0.2;
+                    background-image: radial-gradient(
+                        circle,
+                        #121212 0.96px,
+                        transparent 0.96px
+                    );
+                    background-size: 16px 16px;
+                    mask-image: radial-gradient(
+                        ellipse at center,
+                        rgba(0, 0, 0, 0.7) 0%,
+                        rgba(0, 0, 0, 0) 75%
+                    );
+                    -webkit-mask-image: radial-gradient(
+                        ellipse at center,
+                        rgba(0, 0, 0, 0.7) 0%,
+                        rgba(0, 0, 0, 0) 75%
+                    );
+                    mask-size: 100% 100%;
+                    -webkit-mask-size: 100% 100%;
+                    mask-repeat: no-repeat;
+                    -webkit-mask-repeat: no-repeat;
+                "
+            ></div>
+        </div>
         <div class="absolute inset-0 pointer-events-none overflow-visible">
             <div
                 class="absolute rounded-full blur-[90px] w-155 h-155 bg-primary/5 md:bg-[#B2D0FF]/30 -top-55 -right-30 animate-float1"
@@ -136,7 +152,7 @@ mask-repeat: no-repeat;
                     class="relative bg-white/70 backdrop-blur-2xl backdrop-saturate-150 border border-white/70 rounded-4xl p-6 lg:p-9 shadow-2xl transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform transform-3d"
                 >
                     <div
-                        class="absolute -inset-px rounded-4xl bg-linear-to-br from-primary/10 to-accent/20 -z-10 blur-[2px]"
+                        class="absolute -inset-px rounded-4xl bg-linear-to-br from-white to-primary/10 -z-10 blur-[2px]"
                     ></div>
                     <div class="mb-7">
                         <span
@@ -200,8 +216,11 @@ mask-repeat: no-repeat;
                     <div
                         class="flex justify-between pt-5.5 border-t border-line-soft"
                     >
-                        <div class="flex flex-col items-center gap-1 flex-1 px-2">
-                            <span class="text-base lg:text-2xl font-extrabold text-gradient"
+                        <div
+                            class="flex flex-col items-center gap-1 flex-1 px-2"
+                        >
+                            <span
+                                class="text-base lg:text-2xl font-extrabold text-gradient"
                                 >NO–CODE</span
                             >
                             <span
@@ -212,7 +231,8 @@ mask-repeat: no-repeat;
                         <div
                             class="flex flex-col items-center gap-1 flex-1 border-l border-line-soft px-2"
                         >
-                            <span class="text-base lg:text-2xl font-extrabold text-gradient"
+                            <span
+                                class="text-base lg:text-2xl font-extrabold text-gradient"
                                 >LIVE</span
                             >
                             <span

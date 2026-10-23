@@ -23,7 +23,7 @@ const cases = [
         <div class="container mx-auto max-w-7xl px-4 md:px-8">
             <div v-reveal class="text-center max-w-185 mx-auto mb-20">
                 <span class="section-tag">Производственный кейс</span>
-                <h2 class="text-[clamp(36px,4.5vw,58px)] mb-4.5 tracking-tight">
+                <h2 class="text-[clamp(36px,4.5vw,58px)] mb-4.5 tracking-tight text-balance">
                     Одна логика для компаний разных отраслей
                 </h2>
                 <p class="text-lg">

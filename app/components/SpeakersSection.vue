@@ -22,7 +22,7 @@ const speakers = [
     <div class="container mx-auto max-w-7xl px-4 md:px-8">
       <div v-reveal class="text-center max-w-185 mx-auto mb-10 md:mb-20">
         <span class="section-tag">Спикеры</span>
-        <h2 class="text-[clamp(28px,4.5vw,54px)] mb-4.5 tracking-tight">Практический взгляд со стороны бизнеса и&nbsp;внедрения</h2>
+        <h2 class="text-[clamp(28px,4.5vw,54px)] text-balance mb-4.5 tracking-tight">Практический взгляд со стороны бизнеса и&nbsp;внедрения</h2>
       </div>
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-230 mx-auto">
