@@ -18,7 +18,7 @@ const speakers = [
 </script>
 
 <template>
-  <section class="relative py-16 md:py-36 min-h-screen flex items-center" id="speakers">
+  <section class="relative py-16 md:py-24 min-h-screen flex items-center" id="speakers">
     <div class="container mx-auto max-w-7xl px-4 md:px-8">
       <div v-reveal class="text-center max-w-185 mx-auto mb-10 md:mb-20">
         <span class="section-tag">Спикеры</span>

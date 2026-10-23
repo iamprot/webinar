@@ -19,7 +19,7 @@ const cases = [
 ]
 </script>
 <template>
-    <section class="relative py-16 md:py-36 min-h-screen flex items-center" id="cases">
+    <section class="relative py-16 md:py-24 min-h-screen flex items-center" id="cases">
         <div class="container mx-auto max-w-7xl px-4 md:px-8">
             <div v-reveal class="text-center max-w-185 mx-auto mb-20">
                 <span class="section-tag">Производственный кейс</span>

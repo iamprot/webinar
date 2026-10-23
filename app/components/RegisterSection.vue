@@ -192,7 +192,7 @@ const event = [
 
 <template>
     <section
-        class="relative py-16 md:py-36 min-h-screen flex items-center bg-linear-to-br from-ink to-[#1a1a3a] text-white overflow-hidden"
+        class="relative py-16 md:py-24 min-h-screen flex items-center bg-linear-to-br from-ink to-[#1a1a3a] text-white overflow-hidden"
         id="register"
     >
         <div
