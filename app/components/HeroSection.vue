@@ -88,7 +88,7 @@ const event = [
 
                 <h1
                     v-reveal="{ delay: 2 }"
-                    class="text-[clamp(40px,5vw,64px)] mb-7 tracking-tight font-extrabold"
+                    class="text-[clamp(48px,5vw,72px)] mb-7 leading-12 md:leading-16 tracking-tight font-black"
                 >
                     Как собрать бюджетную модель
                     <span class="text-gradient block">за 2 часа</span>

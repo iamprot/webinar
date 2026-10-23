@@ -25,7 +25,7 @@ export default defineNuxtConfig({
     },
     googleFonts: {
         families: {
-            Unbounded: "200..900",
+            Mulish: "200..1000",
             Geologica: "100..900",
         },
     },

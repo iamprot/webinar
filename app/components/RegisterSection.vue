@@ -267,7 +267,7 @@ const event = [
                                 id="name"
                                 placeholder="Иван"
                                 maxlength="64"
-                                class="p-3.5 bg-white/5 border border-white/10 rounded-xl text-white text-[15px] transition-all placeholder:text-white/30 focus:outline-none focus:border-accent focus:bg-white/10 focus:shadow-[0_0_0_4px_rgba(149,223,255,0.12)]"
+                                class="p-3.5 bg-white/5 border border-white/20 rounded-xl text-white text-[15px] transition-all placeholder:text-white/30 focus:outline-none focus:border-accent focus:bg-white/10 focus:shadow-[0_0_0_4px_rgba(149,223,255,0.12)]"
                                 :class="{
                                     'border-red-500! shadow-[0_0_0_4px_rgba(255,107,107,0.12)]!':
                                         errors.name,
@@ -286,7 +286,7 @@ const event = [
                                 id="surname"
                                 placeholder="Иванов"
                                 maxlength="64"
-                                class="p-3.5 bg-white/5 border border-white/10 rounded-xl text-white text-[15px] transition-all placeholder:text-white/30 focus:outline-none focus:border-accent focus:bg-white/10 focus:shadow-[0_0_0_4px_rgba(149,223,255,0.12)]"
+                                class="p-3.5 bg-white/5 border border-white/20 rounded-xl text-white text-[15px] transition-all placeholder:text-white/30 focus:outline-none focus:border-accent focus:bg-white/10 focus:shadow-[0_0_0_4px_rgba(149,223,255,0.12)]"
                                 :class="{
                                     'border-red-500! shadow-[0_0_0_4px_rgba(255,107,107,0.12)]!':
                                         errors.surname,
@@ -308,7 +308,7 @@ const event = [
                                 id="company"
                                 placeholder="Название компании"
                                 maxlength="64"
-                                class="p-3.5 bg-white/5 border border-white/10 rounded-xl text-white text-[15px] transition-all placeholder:text-white/30 focus:outline-none focus:border-accent focus:bg-white/10 focus:shadow-[0_0_0_4px_rgba(149,223,255,0.12)]"
+                                class="p-3.5 bg-white/5 border border-white/20 rounded-xl text-white text-[15px] transition-all placeholder:text-white/30 focus:outline-none focus:border-accent focus:bg-white/10 focus:shadow-[0_0_0_4px_rgba(149,223,255,0.12)]"
                                 :class="{
                                     'border-red-500! shadow-[0_0_0_4px_rgba(255,107,107,0.12)]!':
                                         errors.company,
@@ -327,7 +327,7 @@ const event = [
                                 id="position"
                                 placeholder="Название должности"
                                 maxlength="64"
-                                class="p-3.5 bg-white/5 border border-white/10 rounded-xl text-white text-[15px] transition-all placeholder:text-white/30 focus:outline-none focus:border-accent focus:bg-white/10 focus:shadow-[0_0_0_4px_rgba(149,223,255,0.12)]"
+                                class="p-3.5 bg-white/5 border border-white/20 rounded-xl text-white text-[15px] transition-all placeholder:text-white/30 focus:outline-none focus:border-accent focus:bg-white/10 focus:shadow-[0_0_0_4px_rgba(149,223,255,0.12)]"
                                 :class="{
                                     'border-red-500! shadow-[0_0_0_4px_rgba(255,107,107,0.12)]!':
                                         errors.position,
@@ -349,7 +349,7 @@ const event = [
                                 id="email"
                                 placeholder="ivan@company.ru"
                                 maxlength="64"
-                                class="p-3.5 bg-white/5 border border-white/10 rounded-xl text-white text-[15px] transition-all placeholder:text-white/30 focus:outline-none focus:border-accent focus:bg-white/10 focus:shadow-[0_0_0_4px_rgba(149,223,255,0.12)]"
+                                class="p-3.5 bg-white/5 border border-white/20 rounded-xl text-white text-[15px] transition-all placeholder:text-white/30 focus:outline-none focus:border-accent focus:bg-white/10 focus:shadow-[0_0_0_4px_rgba(149,223,255,0.12)]"
                                 :class="{
                                     'border-red-500! shadow-[0_0_0_4px_rgba(255,107,107,0.12)]!':
                                         errors.email,
@@ -368,7 +368,7 @@ const event = [
                                 id="phone"
                                 placeholder="+7 999 123-45-67"
                                 maxlength="16"
-                                class="p-3.5 bg-white/5 border border-white/10 rounded-xl text-white text-[15px] transition-all placeholder:text-white/30 focus:outline-none focus:border-accent focus:bg-white/10 focus:shadow-[0_0_0_4px_rgba(149,223,255,0.12)]"
+                                class="p-3.5 bg-white/5 border border-white/20 rounded-xl text-white text-[15px] transition-all placeholder:text-white/30 focus:outline-none focus:border-accent focus:bg-white/10 focus:shadow-[0_0_0_4px_rgba(149,223,255,0.12)]"
                                 :class="{
                                     'border-red-500! shadow-[0_0_0_4px_rgba(255,107,107,0.12)]!':
                                         errors.phone,

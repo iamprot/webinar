@@ -10,7 +10,7 @@
   --color-line-strong: rgba(40, 40, 75, 0.15);
   --color-muted: #6b6b8c;
   
-  --font-display: 'Unbounded', sans-serif;
+  --font-display: 'Mulish', sans-serif;
   --font-body: 'Geologica', sans-serif;
 
   --shadow-2xl: 0 16px 32px rgb(190 215 255 / 0.4);
@@ -48,7 +48,7 @@
   }
 
   h1, h2, h3, h4, h5 {
-    @apply font-display font-bold leading-none tracking-tight text-ink;
+    @apply font-display font-black leading-none tracking-tight text-ink;
   }
 
   ::selection {
