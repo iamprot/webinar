@@ -19,6 +19,10 @@ const speakers = [
 
 <template>
   <section class="relative py-16 md:py-24 min-h-screen flex items-center" id="speakers">
+            <div v-reveal="{ delay: 4 }" class="hidden lg:block absolute inset-0 w-full -z-10">
+
+            <WavesBackground class="w-full h-full object-cover opacity-6" />
+        </div>
     <div class="container mx-auto max-w-7xl px-4 md:px-8">
       <div v-reveal class="text-center max-w-185 mx-auto mb-10 md:mb-20">
         <span class="section-tag">Спикеры</span>

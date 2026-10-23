@@ -25,14 +25,41 @@ const steps = [
 
 <template>
     <section class="relative py-16 md:py-24 min-h-screen flex items-center" id="steps">
-        <div v-reveal="{ delay: 4 }" class="hidden lg:block absolute inset-0 w-full -z-10">
-
-            <WavesBackground class="w-full h-full object-cover opacity-45" />
-        </div>
+        <div class="absolute inset-0 w-full"
+            style="
+                background-color: #f5f5f7;
+                opacity: 0.15;
+                background-image:
+                    linear-gradient(
+                        #121212 1.4000000000000001px,
+                        transparent 1.4000000000000001px
+                    ),
+                    linear-gradient(
+                        to right,
+                        #121212 1.4000000000000001px,
+                        #e5e5f7 1.4000000000000001px
+                    );
+                background-size: 42px 42px;
+                mask-image: radial-gradient(
+                    ellipse at center,
+                    rgba(0, 0, 0, 0.7) 0%,
+                    rgba(0, 0, 0, 0) 75%
+                );
+                -webkit-mask-image: radial-gradient(
+                    ellipse at center,
+                    rgba(0, 0, 0, 0.7) 0%,
+                    rgba(0, 0, 0, 0) 75%
+                );
+                mask-size: 100% 100%;
+                -webkit-mask-size: 100% 100%;
+                mask-repeat: no-repeat;
+                -webkit-mask-repeat: no-repeat;
+            "
+        ></div>
         <div class="container mx-auto max-w-7xl px-4 md:px-8">
             <div v-reveal class="text-center max-w-185 mx-auto mb-20">
                 <span class="section-tag">Что увидите</span>
-                <h2 class="text-[clamp(36px,4.5vw,58px)] mb-4.5 tracking-tight">
+                <h2 class="text-[clamp(36px,4.5vw,58px)] mb-4.5 tracking-tight text-balance">
                     От бизнес–кейса до сводного бюджета
                 </h2>
                 <p class="text-lg">
