@@ -25,7 +25,7 @@ const steps = [
 
 <template>
     <section class="relative py-16 md:py-24 min-h-screen flex items-center" id="steps">
-        <div class="absolute inset-0 w-full"
+        <div class="absolute -z-1 inset-0 w-full"
             style="
                 background-color: #f5f5f7;
                 opacity: 0.15;
