@@ -54,32 +54,7 @@ const event = [
     >
         <div class="absolute inset-0 opacity-100">
             <div
-                class="h-full"
-                style="
-                    background-color: #e5e5f7;
-                    opacity: 0.2;
-                    background-image: radial-gradient(
-                        circle,
-                        #121212 0.96px,
-                        transparent 0.96px
-                    );
-                    background-size: 16px 16px;
-                    mask-image: radial-gradient(
-                        ellipse at center,
-                        rgba(0, 0, 0, 0.7) 0%,
-                        rgba(0, 0, 0, 0) 75%
-                    );
-                    -webkit-mask-image: radial-gradient(
-                        ellipse at center,
-                        rgba(0, 0, 0, 0.7) 0%,
-                        rgba(0, 0, 0, 0) 75%
-                    );
-                    mask-size: 100% 100%;
-                    -webkit-mask-size: 100% 100%;
-                    mask-repeat: no-repeat;
-                    -webkit-mask-repeat: no-repeat;
-                "
-            ></div>
+                class="h-full hero-bg"></div>
         </div>
         <div class="absolute inset-0 pointer-events-none overflow-visible">
             <div

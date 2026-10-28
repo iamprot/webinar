@@ -60,7 +60,7 @@ const cases = [
                             class="shrink-9 w-6! h-6!"
                         />
                     </div>
-                    <h3 class="text-xl mb-3 leading-7">{{ item.title }}</h3>
+                    <h3 class="text-xl mb-3 leading-7 text-balance">{{ item.title }}</h3>
                     <p class="text-[16px] mb-6">
                         {{ item.description }}
                     </p>
