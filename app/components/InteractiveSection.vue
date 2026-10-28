@@ -1,6 +1,4 @@
 <script setup>
-import { onMounted, onUnmounted, ref } from "vue";
-
 // Use individual refs for each card to avoid inline function ref issues
 const card0 = ref(null);
 const card1 = ref(null);
@@ -134,7 +132,7 @@ onUnmounted(() => {
                     ref="card1"
                     class="fancy-card group bg-[#21214B] border border-accent/10 rounded-[28px] p-8 backdrop-blur-xl transition-all duration-400 hover:bg-[#252552] hover:border-accent/40 flex flex-col justify-start"
                     style="
-                        transform: perspective(500px)
+                        transform: perspective(1000px)
                             rotateX(var(--tilt, 0deg));
                         transform-style: preserve-3d;
                     "
@@ -159,7 +157,7 @@ onUnmounted(() => {
                     ref="card2"
                     class="fancy-card group bg-[#21214B] border border-accent/10 rounded-[28px] p-8 backdrop-blur-xl transition-all duration-400 hover:bg-[#252552] hover:border-accent/40 flex flex-col justify-start"
                     style="
-                        transform: perspective(500px)
+                        transform: perspective(1000px)
                             rotateX(var(--tilt, 0deg));
                         transform-style: preserve-3d;
                     "
