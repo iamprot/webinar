@@ -19,7 +19,7 @@ const roles = [
       </div>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        <article v-for="(role, i) in roles" :key="i" v-reveal="{ delay: Math.floor(i/2) + 1 }" class="bg-white border border-line-soft rounded-3xl p-7 flex items-center gap-4.5 transition-all duration-300 hover:border-primary hover:-translate-y-1 hover:scale-[1.01] hover:shadow-2xl group hover:cursor-default">
+        <article v-for="(role, i) in roles" :key="i" v-reveal="{ delay: Math.floor(i/2) + 1 }" class="bg-white border border-line-soft rounded-3xl p-7 flex items-center gap-4.5 transition-all duration-300 hover:border-primary hover:-translate-y-1 hover:shadow-2xl group hover:cursor-default">
           <div class="w-13 h-13 rounded-2xl bg-primary/5 flex items-center justify-center text-xl text-primary shrink-0 transition-all duration-500 group-hover:bg-primary  group-hover:text-white">
             <Icon :name="`lucide-extended:${role.icon}`" class="shrink-0 h-6! w-6!"/>
           </div>

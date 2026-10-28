@@ -213,7 +213,7 @@ const event = [
                     <h2
                         class="text-white text-[clamp(34px,4vw,48px)] mb-4.5 tracking-tight"
                     >
-                        Как собрать бюджетную модель за 2 часа
+                        Как собрать бюджетную модель за <span class="text-gradient">2 часа</span>
                     </h2>
                     <p class="text-white/70 text-lg mb-8">
                         Совместный открытый урок Knowledge Space и Axenix

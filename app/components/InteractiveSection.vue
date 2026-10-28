@@ -1,39 +1,4 @@
 <script setup>
-// Use individual refs for each card to avoid inline function ref issues
-const card0 = ref(null);
-const card1 = ref(null);
-const card2 = ref(null);
-
-let ticking = false;
-
-const updateTilt = () => {
-    [card0.value, card1.value, card2.value].forEach((card) => {
-        if (!card) return;
-        const rect = card.getBoundingClientRect();
-        const center = rect.top + rect.height / 2;
-        const windowCenter = window.innerHeight / 2;
-        const delta = (center - windowCenter) / window.innerHeight;
-        const tilt = Math.max(-6, Math.min(6, delta * -8));
-        card.style.setProperty("--tilt", `${tilt}deg`);
-    });
-    ticking = false;
-};
-
-const handleScroll = () => {
-    if (!ticking) {
-        requestAnimationFrame(updateTilt);
-        ticking = true;
-    }
-};
-
-onMounted(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    updateTilt();
-});
-
-onUnmounted(() => {
-    window.removeEventListener("scroll", handleScroll);
-});
 </script>
 
 <template>
@@ -105,11 +70,7 @@ onUnmounted(() => {
                 <article
                     v-reveal="{ delay: 1 }"
                     ref="card0"
-                    class="fancy-card group border border-accent/10 rounded-[28px] p-8 md:p-12 backdrop-blur-xl transition-all duration-400 hover:border-accent/40 flex flex-col justify-center md:row-span-2"
-                    style="
-                        transform: perspective(500px) rotateX(var(--tilt, 0deg));
-                        transform-style: preserve-3d;
-                    "
+                    class="fancy-card group border border-accent/10 rounded-[28px] p-8 md:p-12 backdrop-blur-xl transition-all duration-400 hover:border-accent/40 flex flex-col justify-center md:row-span-2 shadow-secondary/25 hover:shadow-2xl"
                 >
                     <span
                         class="inline-block px-3.5 py-1.5 bg-accent/15 text-accent text-xs font-semibold tracking-widest uppercase rounded-full mb-5 self-start"
@@ -130,12 +91,7 @@ onUnmounted(() => {
                 <article
                     v-reveal="{ delay: 2 }"
                     ref="card1"
-                    class="fancy-card group bg-[#21214B] border border-accent/10 rounded-[28px] p-8 backdrop-blur-xl transition-all duration-400 hover:bg-[#252552] hover:border-accent/40 flex flex-col justify-start"
-                    style="
-                        transform: perspective(1000px)
-                            rotateX(var(--tilt, 0deg));
-                        transform-style: preserve-3d;
-                    "
+                    class="fancy-card group bg-[#21214B] border border-accent/10 rounded-[28px] p-8 backdrop-blur-xl transition-all duration-400 hover:bg-[#252552] hover:border-accent/40 flex flex-col justify-start shadow-secondary/25 hover:shadow-2xl"
                 >
                     <span
                         class="inline-block px-3 py-1.5 bg-accent/15 text-accent text-[11px] font-semibold tracking-widest uppercase rounded-full mb-4 self-start"
@@ -155,12 +111,7 @@ onUnmounted(() => {
                 <article
                     v-reveal="{ delay: 3 }"
                     ref="card2"
-                    class="fancy-card group bg-[#21214B] border border-accent/10 rounded-[28px] p-8 backdrop-blur-xl transition-all duration-400 hover:bg-[#252552] hover:border-accent/40 flex flex-col justify-start"
-                    style="
-                        transform: perspective(1000px)
-                            rotateX(var(--tilt, 0deg));
-                        transform-style: preserve-3d;
-                    "
+                    class="fancy-card group bg-[#21214B] border border-accent/10 rounded-[28px] p-8 backdrop-blur-xl transition-all duration-400 hover:bg-[#252552] hover:border-accent/40 flex flex-col justify-start shadow-secondary/25 hover:shadow-2xl"
                 >
                     <span
                         class="inline-block px-3 py-1.5 bg-accent/15 text-accent text-[11px] font-semibold tracking-widest uppercase rounded-full mb-4 self-start"
