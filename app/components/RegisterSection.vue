@@ -196,7 +196,7 @@ const event = [
         id="register"
     >
         <div
-            class="absolute -top-50 -right-25 w-150 h-150 rounded-full bg-primary/50 blur-[80px] pointer-events-none"
+            class="absolute -top-50 -right-25 w-150 h-150 rounded-full bg-primary/10 lg:bg-primary/50 blur-[80px] pointer-events-none"
         ></div>
         <div
             class="absolute -bottom-50 -left-25 w-125 h-125 rounded-full bg-accent/35 blur-[80px] pointer-events-none"
