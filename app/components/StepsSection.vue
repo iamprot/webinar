@@ -70,7 +70,7 @@ const steps = [
                 <article
                     v-for="(item, idx) in steps" :key="idx"
                     v-reveal="{ delay: idx + 1 }"
-                    class="bg-white border-2 border-line-soft rounded-[28px] p-10 cursor-pointer transition-all duration-400 relative hover:border-primary hover:bg-linear-to-br hover:from-white hover:to-primary/3 hover:-translate-y-1 hover:shadow-2xl group"
+                    class="steps-card bg-white border-2 border-line-soft rounded-[28px] p-10 cursor-pointer transition-all duration-400 relative hover:border-primary hover:bg-linear-to-br hover:from-white hover:to-primary/3 hover:-translate-y-1 hover:shadow-2xl group"
                 >
                     <div
                         class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-ink text-white font-bold text-lg mb-5 transition-all group-hover:bg-primary group-hover:scale-105"
