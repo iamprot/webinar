@@ -78,7 +78,7 @@ const event = [
                     <span
                         class="w-2 h-2 shrink-0 rounded-full bg-primary shadow-[0_0_0_4px_rgba(68,19,217,0.2)] animate-pulse-custom"
                     ></span>
-                    Открытый практический урок &mdash; Knowledge Space × Axenix
+                    Открытый практический урок
                 </div>
 
                 <div v-reveal="{ delay: 1 }" class="flex gap-3 flex-wrap mb-8">
@@ -94,7 +94,7 @@ const event = [
 
                 <h1
                     v-reveal="{ delay: 2 }"
-                    class="text-[clamp(48px,5vw,72px)] mb-7 leading-[clamp(1.2,1rem + 0.3vw,1.5)] tracking-tight font-black"
+                    class="text-[clamp(48px,5vw,64px)] mb-7 leading-[clamp(1.2,1rem + 0.3vw,1.5)] tracking-tight font-black"
                 >
                     Как собрать бюджетную модель
                     <span class="text-gradient inline-block md:block">за 2 часа</span>
@@ -103,10 +103,10 @@ const event = [
                     v-reveal="{ delay: 3 }"
                     class="text-base font-light md:text-lg leading-relaxed mb-10 max-w-135 text-ink"
                 >
-                    На примере реализованного проекта в производственной
+                    На примере демонстрационного проекта в производственной
                     компании покажем, как без программирования собрать бюджетную
                     модель, организовать сбор данных подразделений, рассчитать
-                    полную себестоимость и&nbsp;проверить разные сценарии.
+                    полную себестоимость и&nbsp;сравнить несколько вариантов бюджета.
                 </p>
                 <div
                     v-reveal="{ delay: 4 }"
@@ -183,8 +183,7 @@ const event = [
                                 class="text-primary mt-1.5"
                             />
                             <span
-                                >Сценарное моделирование и «что-если»
-                                анализ</span
+                                >Сравнение вариантов бюджета</span
                             >
                         </li>
                     </ul>
