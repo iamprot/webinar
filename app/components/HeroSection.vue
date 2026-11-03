@@ -28,7 +28,7 @@ const handleMouseLeave = () => {
 const event = [
     {
         icon: "calendar",
-        description: "13 ноября 2026",
+        description: "20 ноября 2026",
     },
     {
         icon: "clock-2",
@@ -86,9 +86,7 @@ const event = [
                         v-for="(item, idx) in event"
                         class="flex items-center gap-2.5 text-sm text-primary px-4 py-2 bg-primary/5 hover:bg-white/50 border border-primary/20 rounded-full transition-colors duration-300 ease-in-out"
                     >
-                        <Icon :name="`lucide:${item.icon}`" /><span>{{
-                            item.description
-                        }}</span>
+                        <Icon :name="`lucide:${item.icon}`" /><span>{{ item.description }}</span>
                     </div>
                 </div>
 

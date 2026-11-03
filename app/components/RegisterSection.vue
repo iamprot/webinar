@@ -169,11 +169,11 @@ const showToast = (message: string, type = "success") => {
 const event = [
     {
         icon: "check",
-        description: "13 ноября 2026",
+        description: "20 ноября 2026",
     },
     {
         icon: "check",
-        description: "12:00 - 14:00",
+        description: "12:00 – 14:00",
     },
     {
         icon: "check",
